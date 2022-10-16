@@ -12,7 +12,7 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <SectionData>
-      {title ? <Title>Upload stats</Title> : false}
+      {title && <Title>Upload stats</Title>}
       <ListData>
         {stats.map((stat, index) => {
           return (
